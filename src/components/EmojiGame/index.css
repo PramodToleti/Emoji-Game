@@ -1,0 +1,80 @@
+.bg-container {
+  height: 100vh;
+  background-image: linear-gradient(135deg, #9796f0, #fbc7d4);
+}
+
+/* Emoji Game Body */
+
+.emoji-game-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.emoji-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 577px) {
+  .emoji-container {
+    width: 90%;
+  }
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.background-icon-1 {
+  position: absolute;
+  top: 30vmin;
+  left: 10vmin;
+  rotate: -10deg;
+  filter: blur(3px);
+  width: 100px;
+  display: none;
+}
+
+@media screen and (min-width: 577px) {
+  .background-icon-1 {
+    top: 15vmin;
+    left: 5vmin;
+  }
+}
+
+.background-icon-2 {
+  position: absolute;
+  width: 150px;
+  rotate: 15deg;
+  top: 180vmin;
+  right: 10vmin;
+  filter: blur(3px);
+  display: none;
+}
+
+@media screen and (min-width: 577px) {
+  .background-icon-2 {
+    width: 120px;
+    top: 83vmin;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .background-icon-1 {
+    display: flex;
+  }
+
+  .background-icon-2 {
+    display: flex;
+  }
+}
